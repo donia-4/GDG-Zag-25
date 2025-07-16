@@ -1,0 +1,12 @@
+/*
+Block
+    - take full width if width is not determined
+    - Add line break before and after
+    - Respect padding & margin & Width & height
+Inline
+    - doesn't add line break
+    - doesn't respect width or height 
+    - only respect padding and margin just for left + right 
+Inline_Block
+    - Respect padding & margin & Width & height
+*/
