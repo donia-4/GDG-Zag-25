@@ -1,0 +1,102 @@
+.assign-1-shape-1 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: blueviolet;
+    background-color: rgb(138, 43, 226);
+    background-color: #8a2be2;
+    background-color: hsl(271, 76%, 53%)
+}
+.assign-1-shape-2 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(138 43 226/ 50%);
+    background-color: hsla(271, 76%, 53%, 0.5)
+}
+.assign-1-shape-3 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(138 43 226/ 10%);
+    background-color: hsla(271, 76%, 53%, 0.1)
+}
+.assign-2-shape-1 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+}
+.assign-2-shape-2 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat-y;
+}
+.assign-2-shape-3 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat-x;
+}
+.assign-2-shape-4 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat;
+}
+.assign-3-shape-1 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+}
+.assign-3-shape-2 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat-y;
+    background-position: right
+}
+.assign-3-shape-3 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat-x;
+    background-position: right
+}
+.assign-3-shape-4 {
+    width: 600px;
+    height: 600px;
+    color: white; 
+    background-image: url("Img/square.png");
+    margin-top: 20px;
+    padding: 20px;
+    background-repeat: repeat;
+}
