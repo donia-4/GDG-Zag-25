@@ -10,3 +10,55 @@ Inline
 Inline_Block
     - Respect padding & margin & Width & height
 */
+.shape {
+    display: inline-block;
+    padding: 40px;
+    background-color: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-right: 10px; /* spacing between shapes */
+}
+.shape-1 {
+    border: 5px solid red; 
+    outline: 5px solid black;
+}
+.shape-2 {
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    outline: 5px solid black;
+}
+.shape-3 {
+    border-style: dashed;
+    border-top: 5px dashed red;
+    border-left: 5px dashed yellow;
+    border-bottom: 5px dashed blue;
+    border-right: 5px dashed green;
+    outline: 5px solid black;
+}
+.element {
+    width: 400px;
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border-left: 10px solid;
+}
+.element-1 {
+    margin-top: 40px;
+    border-color: #e91e63;
+    outline: 15px solid #eee ;
+}
+.element-2 {
+    visibility: hidden;
+    border-color: #000;
+    outline: 15px solid #eee ; 
+}
+.element-3 {
+    border-color: #009688;
+    outline: 15px solid #eee ;
+}
