@@ -1,0 +1,24 @@
+div div span.title {
+    color: red; 
+}
+div span.title {
+    color: blue; 
+}
+.title, div p{
+    color: green;
+}
+.titles {
+    width: fit-content;
+    max-width: 400px;
+    overflow-y: hidden;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.four {
+    max-height: 50px ;   
+}
+.four span {
+    background-color: rgb(15, 110, 199);
+}
