@@ -1,0 +1,42 @@
+p {
+  position: relative;
+  background-color: #eee;
+  padding: 20px 20px 20px 80px;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  width: 450px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+p::before {
+  content: counter(p-counter);
+  counter-increment: p-counter;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 100%;
+  background-color: rgb(240, 46, 46);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: rgb(240, 46, 46);
+}
+
+body {
+  counter-reset: p-counter;
+}
