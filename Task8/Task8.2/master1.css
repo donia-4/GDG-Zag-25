@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+div {
+  width: 320px;
+  height: 220px;
+  background-color: #eee;
+  color: #03a9f4;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.main::before,
+.main::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 220px;
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  z-index: -1;
+}
+
+.main::before {
+  background-color: #e91e63;
+  /* transform: translate(-50%, -50%) rotate(7deg);  */
+  transform: rotate(7deg); 
+}
+
+.main::after {
+  background-color: #03a9f4;
+  /* transform: translate(-50%, -50%) rotate(-7deg);  */
+  transform: rotate(-7deg);
+}
