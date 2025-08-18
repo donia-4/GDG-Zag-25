@@ -1,0 +1,304 @@
+/* ===== Reset & Base ===== */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    line-height: 1.8;
+    background: #fdf5e6;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 0 16px;
+}
+
+/* ===== Top Navigation ===== */
+:root {
+    --nav-h: 46px;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-h);
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1000;
+}
+
+body {
+    padding-top: var(--nav-h);
+}
+
+.topnav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 100px;
+}
+
+.topnav a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 75vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    background: url('/Images/coffeehouse.jpg') center/cover no-repeat;
+    filter: grayscale(50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 16px;
+    color: #fff;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 8px;
+    font-size: clamp(48px, 12vw, 140px);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.open-hours,
+.address {
+    position: absolute;
+    bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.open-hours {
+    left: 20px;
+    background: #000;
+    padding: 0px 6px;
+}
+
+.address {
+    right: 20px;
+}
+
+/* ===== Main Sections ===== */
+.section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    color: #000;
+    background: transparent;
+}
+
+.eyebrow {
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 8px 16px;
+    margin: 0 auto 32px;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.section p,
+.section h3,
+.section figure {
+    text-align: left;
+}
+
+.wide {
+    width: 100%;
+    margin: 24px 0;
+}
+
+/* Quote */
+.quote {
+    background: #f1f1f1;
+    padding: 16px 24px;
+    border-left: 6px solid #ccc;
+    margin: 24px 0;
+}
+
+.quote blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.quote figcaption {
+    margin-top: 8px;
+}
+
+/*Menu*/
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.menu-tabs .tablink {
+    flex: 1;
+    max-width: 300px;
+    padding: 12px 0;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.menu-tabs .tablink.active {
+    background: #000;
+    color: #fff;
+}
+
+.menu-list {
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.menu-list h3 {
+    margin: 16px 0 4px;
+    font-weight: 700;
+}
+
+.menu-list p {
+    margin: 0 0 12px;
+    color: #555;
+}
+
+
+
+/* Where */
+.highlight {
+    background: #000;
+    color: #fff;
+    padding: 2px 6px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    font: inherit;
+    font-size: 16px;
+}
+
+.contact-form input:focus {
+    outline: 2px solid #000;
+    border-radius: 2px;
+}
+
+.contact-form button {
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 32px 16px;
+    background: #f1f1f1;
+    color: #777;
+    font-size: 14px;
+    margin-top: 16px;
+}
+.footer a {
+  color: #000;        
+}
+.section img:hover {
+    transform: none;
+    transition: none;
+}
+
+/* Responsive: قللي المسافات في العرض الصغير */
+@media (max-width:700px) {
+    .topnav {
+        gap: 16px;
+    }
+
+    .topnav a {
+        padding: 10px 16px;
+        letter-spacing: 3px;
+    }
+
+    .hero-bottom {
+        padding-bottom: 16px;
+    }
+}
